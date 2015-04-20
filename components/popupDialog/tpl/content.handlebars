@@ -1,0 +1,16 @@
+<div class="wl-title">
+    <div>Fall of wickets</div>
+    <div id="top-close-btn" class="top-close-btn"></div>
+</div>
+<ul>
+	{{#if data}}
+	    {{#each data}}
+	        <li><span class="wl-name"><i class="wl-order">{{addOne @index}}</i>{{dismissedBatsman}}</span><span class="wl-score">{{currentScore}}({{or}}.{{bl}} ov)</span></li>
+	    {{/each}}
+    {{else}}
+    	<span style="color:#666;">There is no wicket for this inning temporarily</span>
+    {{/if}}
+</ul>
+<div>
+    <div id="wl-close-btn" class="wl-close-btn">Close</div>
+</div>
