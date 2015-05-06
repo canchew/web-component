@@ -1,0 +1,18 @@
+{{#if data}}
+	{{#each data}}
+		<tr>
+		    <td class="rowDataStyle">{{displayDate}}</td>
+		    <td>
+		        {{#if winnerTeamUrl}}
+                    <a href="{{winnerTeamUrl}}">{{winner}}</a>
+                {{else}}
+                    {{winner}}
+                {{/if}}
+		    </td>
+		    <td class="rowDataStyle">{{margin}}</td>
+		    <td class="scorecard-wrap">
+                <a class="scorecard-text" href="{{mScorecardUrl}}"></a>
+            </td>
+		</tr>
+	{{/each}}
+{{/if}}
